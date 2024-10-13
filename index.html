@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              },
+              backgroundImage: {
+                'bannerImg': "url('./images/banner_1.png')",
+                'footer-texture': "url('/img/footer-texture.png')",
+             }
+            }
+          }
+        }
+    </script>
+    <title>MealDB</title>
+</head>
+<body>
+    <header>
+        <nav class="w-11/12 mx-auto mt-5">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+
+                  </div>
+                  <a class="btn btn-ghost text-2xl font-bold">Tasty HUT</a>
+                </div>
+
+                <div class="navbar-end">
+                  <a class="btn btn-md text-xl bg-yellow-400 text-black font-bold">Sign Up</a>
+                </div>
+              </div>
+        </nav>
+        <div class="bg-bannerImg bg-no-repeat bg-cover bg-center">
+            <div class=" w-7/12 mx-auto flex flex-col items-center text-center gap-7 my-5 py-[200px]">
+                <h1 class="text-7xl text-white font-bold">Taste Our Best Delicious Food</h1>
+                <h2 class="text-xl text-white">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humou.</h2>
+                <div class="flex items-center justify-center">
+                    <label class="input input-bordered flex items-center gap-2">
+                        <input type="text" class="grow w-full max-w-lg input-lg" placeholder="Search" />
+                        
+                    </label>
+                    <button class="btn bg-yellow-400 text-black font-bold">Serach</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="flex flex-col items-center justify-center space-y-4">
+            <h1 class="text-3xl font-bold">Your Favourite Food</h1>
+            <div id="contentArea" class="grid grid-cols-3 gap-5">
+
+            </div>
+            <button class="btn bg-yellow-400 text-black font-bold">Show More</button>
+        </div>
+    </main>
+
+    <script src="./main.js"></script>
+</body>
+</html>
