@@ -42,7 +42,7 @@ const createCard=(apiArray)=>{
 const showFoodCard=(imageSrc,categName,idCategory)=>{
     const newCard=document.createElement('div')
     newCard.innerHTML=`
-    <div class="card bg-base-100 w-96 shadow-xl">
+    <div class="card bg-slate-200 w-70 shadow-xl sm:mx-6 mx-auto">
         <figure class="px-5 pt-5">
             <img
             src=${imageSrc}

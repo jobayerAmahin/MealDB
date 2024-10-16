@@ -24,7 +24,7 @@
 </head>
 <body>
     <header>
-        <nav class="w-11/12 mx-auto mt-5">
+        <nav class="w-full mx-auto mt-5 lg:w-11/12">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                   <div class="dropdown">
@@ -58,10 +58,10 @@
                 <h2 class="text-xl text-white">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humou.</h2>
                 <div class="flex items-center justify-center">
                     <label class="input input-bordered flex items-center gap-2">
-                        <input type="text" class="grow w-full max-w-lg input-lg" placeholder="Search" />
+                        <input type="text" class="grow w-full max-w-lg input-sm" placeholder="Type" />
                         
                     </label>
-                    <button class="btn bg-yellow-400 text-black font-bold">Serach</button>
+                    <button class="btn bg-yellow-400 text-black font-bold text-md lg:text-xl">Serach</button>
                 </div>
             </div>
         </div>
@@ -70,14 +70,14 @@
     <main>
         <div class="flex flex-col items-center justify-center space-y-4">
             <h1 class="text-3xl font-bold">Your Favourite Food</h1>
-            <div id="contentArea" class="grid grid-cols-3 gap-5">
+            <div id="contentArea" class="grid grid-cols-1 lg:grid-cols-3 gap-5">
 
             </div>
             <button class="btn bg-yellow-400 text-black font-bold">Show More</button>
         </div>
     </main>
 
-    <footer class="flex justify-evenly items-center gap-5 mt-5 py-[100px] bg-footerCol">
+    <footer class="flex flex-col lg:flex-row justify-evenly items-center gap-5 mt-5 py-[100px] bg-footerCol">
         <div>
             <h1 class="text-3xl font-bold">Our Locations</h1>
             <ul class="list list-none">
